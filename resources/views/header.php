@@ -1,5 +1,4 @@
 <!--
-    This contains the creation section's base
     Author: kahnos
 -->
 <html lang="en">
@@ -60,3 +59,4 @@
         </div>
     </div>
 </nav>
+<body>
