@@ -1,21 +1,12 @@
 <?php
 
 /*
-    Template extracted from: http://code.tutsplus.com/tutorials/organize-your-next-php-project-the-right-way--net-5873
-    Original author: Derek Reynolds
-    Modified by: kahnos
+    Config file for decoSelfie.
+    Author: kahnos
 */
-
 $config = array(
     "urls" => array(
         "baseUrl" => "http://127.0.0.1/"
-    ),
-    "paths" => array(
-        "resources" => "/path/to/resources",
-        "images" => array(
-            "content" => $_SERVER["DOCUMENT_ROOT"] . "/images/content",
-            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/images/layout"
-        )
     )
 );
 
@@ -24,6 +15,12 @@ defined("VENDOR_PATH")
 
 defined("VIEWS_PATH")
     or define("VIEWS_PATH", realpath(dirname(__FILE__) . '/views'));
+
+defined("JS_PATH")
+    or define("JS_PATH", '/decoselfie/web/js/');
+
+defined("CSS_PATH")
+    or define("CSS_PATH", '/decoselfie/web/css/');
 
 /*
     Error reporting.
