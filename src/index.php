@@ -7,31 +7,43 @@
 
     <!---------- Body ---------->
     <div class="container" id="creation-body">
-        <div id="example-basic">
+        <div id="steps">
             <h3>Orientación</h3>
-            <section id="orientation">
-                <p>Try the keyboard navigation by clicking arrow left or right!</p>
-            </section>
+            <step>
+                <?php
+                    require_once(VIEWS_PATH . "/orientation-step.php");
+                ?>
+            </step>
             <h3>Patrón externo</h3>
-            <section id="external-pattern">
-                <p>Wonderful transition effects.</p>
-            </section>
+            <step>
+                <?php
+                    require_once(VIEWS_PATH . "/external-pattern-step.php");
+                ?>
+            </step>
             <h3>Patrón interno</h3>
-            <section id="internal-pattern">
-                <p>The next and previous buttons help you to navigate through your content.</p>
-            </section>
+            <step>
+                <?php
+                    require_once(VIEWS_PATH . "/internal-pattern-step.php");
+                ?>
+            </step>
             <h3>Subir imagen</h3>
-            <section id="image-upload">
-                <p>The next and previous buttons help you to navigate through your content.</p>
-            </section>
-            <h3>Final</h3>
-            <section id="final-preview">
-                <p>The next and previous buttons help you to navigate through your content.</p>
-            </section>
-            <h3>Pago</h3>
-            <section id="payment">
-                <p>The next and previous buttons help you to navigate through your content.</p>
-            </section>
+            <step>
+                <?php
+                    require_once(VIEWS_PATH . "/image-upload-step.php");
+                ?>
+            </step>
+            <h3>Vista final</h3>
+            <step>
+                <?php
+                    require_once(VIEWS_PATH . "/final-preview-step.php");
+                ?>
+            </step>
+            <h3>Compra</h3>
+            <step>
+                <?php
+                    require_once(VIEWS_PATH . "/payment-step.php");
+                ?>
+            </step>
         </div>
     </div>
 

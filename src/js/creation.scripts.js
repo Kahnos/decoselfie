@@ -4,12 +4,15 @@
 */
 $(document).ready(function(){
 
+    var getURL = window.location;
+    var baseURL = getURL .protocol + "//" + getURL.host + "/" + getURL.pathname.split('/')[1];
+
     /*
     * Setups jQuery Steps for the creation module.
     */
-    $("#example-basic").steps({
+    $("#steps").steps({
         headerTag: "h3",
-        bodyTag: "section",
+        bodyTag: "step",
         transitionEffect: "slideLeft",
         autoFocus: true,
         labels: {
@@ -18,21 +21,6 @@ $(document).ready(function(){
             loading: "Cargando..."
         },
         onStepChanging: function(event, currentIndex, newIndex) {
-
-
-            /*if (currentIndex === 0)
-            {
-                if ($("#choose > option:selected").val() === "1")
-                {
-                    wizard.steps("remove", 1);
-                    // In this case you could also use add instead of insert
-                    wizard.steps("insert", 1, {
-                        title: "Result 2",
-                        contentMode: "async",
-                        contentUrl: "/rest/service/1"
-                    });
-                }
-            }*/
             return true;
         }
     });
@@ -44,18 +32,35 @@ $(document).ready(function(){
      * @author José Díaz
      * @param int step contains the step number to load.
      */
-    function creationLoadCall(step) {
-        switch(step) {
+    /*function loadStep(step) {
+        switch (step) {
             case 1:
-                $("#external-pattern").load(".../resources/views/external-pattern.php", function(responseTxt, statusTxt, xhr){
-                    if(statusTxt == "success")
-                        console.log("External content loaded successfully!");
-                    if(statusTxt == "error")
-                        console.log("Error: " + xhr.status + ": " + xhr.statusText);
-                });
+                if (ajaxCall('/src/assets/views/external-pattern.php', '#orientation'))
+                    return true;
                 break;
         }
+
+        console.log("Shit.");
+        return false;
     }
+
+    function ajaxCall(stepURL, stepID) {
+        $.ajax({
+            url: baseURL + stepURL,
+            type: 'GET',
+            async: false,
+            timeout: 30000,
+            error: function(){
+                console.log('Error loading via AJAX.');
+                return false;
+            },
+            success: function(result){
+                console.log('Data loaded via AJAX.');
+                $(stepID).replaceWith(result);
+                return true;
+            }
+        });
+    }*/
 
 });
 

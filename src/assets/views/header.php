@@ -5,16 +5,16 @@
 
 <head id="header">
     <!---------- Header ---------->
-    <!-- MetaTags SEO Posicionamiento web -->
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="es-VE" />
     <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="decoSelfie, DecoSelfie, Deco Selfie, jQuery Steps, HTML5, JavaScript, Accessibility">
+    <meta name="keywords" content="decoSelfie, DecoSelfie, Deco Selfie, selfie, jQuery Steps, HTML5, JavaScript, Accessibility">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="author" content="kahnos -> josed1305@gmail.com" />
+    <meta name="author" content="kahnos <josed1305@gmail.com>" />
     <meta name="owner" content="DecoSelfie" />
 
     <!-- Facebook Open Graph -->
