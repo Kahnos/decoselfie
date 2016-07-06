@@ -10,17 +10,17 @@ $config = array(
     )
 );
 
-defined("VENDOR_PATH")
-    or define("VENDOR_PATH", realpath(dirname(__FILE__) . '/vendor'));
-
 defined("VIEWS_PATH")
     or define("VIEWS_PATH", realpath(dirname(__FILE__) . '/views'));
 
 defined("JS_PATH")
-    or define("JS_PATH", '/decoselfie/web/js/');
+    or define("JS_PATH", '/decoselfie/src/js');
 
 defined("CSS_PATH")
-    or define("CSS_PATH", '/decoselfie/web/css/');
+    or define("CSS_PATH", '/decoselfie/src/css');
+
+defined("VENDOR_PATH")
+    or define("VENDOR_PATH", '/decoselfie/src/assets/vendor');
 
 /*
     Error reporting.

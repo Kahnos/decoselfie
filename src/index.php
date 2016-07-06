@@ -1,5 +1,5 @@
 <?php
-    require_once("../resources/config.php");
+    require_once("assets/config.php");
     require_once(VIEWS_PATH . "/header.php");
 ?>
 
@@ -35,6 +35,6 @@
         </div>
     </div>
 
-    <?php
+<?php
     require_once(VIEWS_PATH . "/footer.php");
 ?>

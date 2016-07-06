@@ -27,9 +27,9 @@
 
     <!-- Hojas de estilo CSS -->
     <?php
-        echo '<link type="text/css" rel="stylesheet" media="screen" href="' . CSS_PATH . 'bootstrap.min.css" >';
-        echo '<link type="text/css" rel="stylesheet" media="screen" href="' . CSS_PATH . 'jquery.steps.css" >';
-        echo '<link type="text/css" rel="stylesheet" media="screen" href="' . CSS_PATH . 'main.css" >';
+        echo '<link type="text/css" rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >';
+        echo '<link type="text/css" rel="stylesheet" media="screen" href="' . VENDOR_PATH . '/jquery.steps/jquery.steps.css" >';
+        echo '<link type="text/css" rel="stylesheet" media="screen" href="' . CSS_PATH . '/decoselfie.css" >';
     ?>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
