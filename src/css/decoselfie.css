@@ -7,20 +7,22 @@ body {
     font-size: 100%;
 }
 
-img {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+/* Steps Module */
+
+.full-height-step {
+    height: 100%;
+    text-align: center;
 }
 
-/* Creation Section */
+.step-upper-section {
+    height: 65%;
+    text-align: center;
+}
+
+.step-lower-section {
+    height: 35%;
+    text-align: center;
+}
 
 #creation-body,
 #steps {
@@ -41,18 +43,6 @@ img {
     max-height: 70vh;
 }
 
-.full-height-step {
-    height: 100%;
-    text-align: center;
-}
-
-.vertical-center {
-    min-height: 100%;
-
-    display: flex;
-    align-items: center;
-}
-
 .step-title {
     font-size: 3em;
     font-family: "Times New Roman", serif;
@@ -65,19 +55,38 @@ img {
     text-align: center;
 }
 
-.orientation-selection-step {
-    min-height: 80%;
-    padding: 2em;
-    padding-right: 1em;
-    padding-left: 1em;
-
-}
-
-.orientation-img-parent {
+.step-img-parent {
     margin: 0 auto;
     height: 65%;
     width: 100%;
     position: relative;
 }
 
-/* End of Creation Section */
+.step-img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.eighty-height {
+    min-height: 80%;
+    padding: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.carousel-container {
+    max-height: 90%;
+    padding: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+/* End of Steps Module */
